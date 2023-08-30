@@ -9,29 +9,40 @@
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 <body>
+<div class="bmi-container">
+<img src="/assets/images/logo.svg" alt="log0" sizes="64x64">
+<h1>Body Mass<br>Index Calculator</h1>
+<p>Better understand your weight in relation to your height using<br>our 
+  body mass index (BM) calculator. While BMI is not the<br>sole determinant 
+  of a healthy weight, it offers a valuable<br> starting point to evaluate 
+  your overall health and well-being.</p>
+</div>
 
-  Body Mass Index Calculator
-
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
-
-  Enter your details below
-
-  Metric
-  Imperial
-
-  Height
-  Weight
-
-  Your BMI is...
+<div class="detail">
+  <p>Enter your details below</p>
+<input type="radio" name="metric" id="metric" value="Metric">
+<label for="metric">Metric</label>
+<input type="radio" name="imperial" id="metric" value="Metric">
+<label for="imperial">Imperial</label><br>
+<div class="met-detail">
+<div>
+<label for="height">Height</label><br> 
+<input type="text" name="height"><br>
+</div>
+<div>
+ <label for="weight">Weight</label><br>
+ <input type="text" name="weight">
+</div>
+</div>
+<div class="bmi">
+  <p>Your BMI is...</p>
 
   <!-- add score -->
 
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
-
+  <p>Your BMI suggests you're <!-- add classification -->. 
+  <br>Your ideal weight is between <!-- add range -->.</p>
+</div>
+</div>
   What your BMI result means
 
   A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
