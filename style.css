@@ -13,12 +13,15 @@
     src: url('/assets/fonts/static/Inter-SemiBold.ttf');
 }
 
-
+.logo{
+    margin-top: 50px;
+}
 h1{
   font-family: 'Inter-SemiBold';
   font-size: 4em;
   line-height: 110%;
   color: hsl(215, 31%, 21%);
+  margin-top: 70px;
  
 }
 body p{
@@ -27,59 +30,107 @@ body p{
     line-height: 150%;
     text-align: left;
     color: hsl(215, 17%, 45%);
+    margin-top: 40px;
 }
 .bmi-container{
     width: 978px;
     height: 737px;
     background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe); 
+    margin-left: 10px;
     border-radius: 0 0 35px 35px;
-    margin-left: 20px;
+   
+
 }
+.summary{
+   margin-left: 70px;
+}
+
 .detail{
+    position: absolute;
+    display: grid;
+    justify-content: center;
     width: 564px;
     height: 464px;
     background: white;
     border-radius: 16px;
-    box-shadow: 10px 10px 25px rgba(143, 174, 207, 0.25);
+    box-shadow: 10px 10px 25px rgba(143, 174, 207, 0.25) ;
+    margin-top: 140px; 
+    z-index: 1;
+    left: 700px;
+    
+  
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    
 }
 .detail p{
     font-family: 'Inter-SemiBold';
     font-size: 1.5em;
     color: hsl(215, 31%, 21%);
     line-height: 110%;
+    margin-top: 20px;
 }
 .detail label{
     font-family: 'Inter-SemiBold';
     font-size: 1em;
-    position: relative;
+    line-height: 150%;
     color: hsl(215, 31%, 21%);
-
     
    
 }
+#metric{
+    margin-bottom: 10px;
+}
+#metric label{
+    padding-left: 10px;
+
+}
+
 .met-detail{
    display: flex;
    flex-direction: row;
    gap: 20px;
+   margin-bottom: 20px;
 }
 .met-detail label{
     font-family: 'Inter-Regular';
     font-size: 14px;
     line-height: 150%;
     color: hsl(215, 17%, 45%);
+ 
 }
-input[type=radio]{
-    width: 30px;
-    height: 30px;
-    
+input[type=radio]:hover {
+    cursor: pointer;
+    background-color: rgb(174, 171, 171);
 }
-input[type=text]{
+
+input[type=radio] {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    position: relative;
+    top: 9px;
+   
+}
+
+
+
+input[type=text] {
     width: 238px;
     height: 69px;
     border-radius: 12px;
     border-style: none;
-    border: 1px solid #D8E2E7;
+    border: 1px solid hsl(200, 24%, 88%);
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Inter-SemiBold';
+    color: hsl(215, 31%, 21%);
 }
+
 .bmi{
     width: 500px;
     height: 166px;
@@ -87,5 +138,24 @@ input[type=text]{
     border-radius: 16px 999px 999px 16px;
 }
 .bmi p{
+    font-family: 'Inter-Semibold';
+    font-size: 24px;
     color: white;
+}
+#ent{
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Inter-Regular';
+    color: #ffffff;
+}
+.right-line{
+    float: right;
+    margin-right: 100px;
+}
+.main h2{
+    font-family: 48px;
+    font-size: 'Inter-Semibold';
+}
+.hidden{
+    display: none;
 }
