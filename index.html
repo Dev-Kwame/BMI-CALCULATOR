@@ -24,7 +24,7 @@
 <div class="detail">
   <p>Enter your details below</p>
 <div id="metric">
-<input type="radio" name="metric" id="metric" class="checked" >
+<input type="radio" name="metric" id="metric">
 <label for="metric">Metric</label>
 <input type="radio" name="imperial" id="metric">
 <label for="imperial">Imperial</label><br>
@@ -40,68 +40,93 @@
 </div>
 </div>
 <div class="bmi">
-  <p>Welcome!</p>
-  <p id="ent">Enter your height and weight and you'll see your BMI result here</p>
+  <div>
+  <div><p>Welcome!</p></div>
+  <div><p id="ent">Enter your height and weight and you'll see your BMI result here</p></div>
+</div>
+</div>
   <p class="hidden">Your BMI is...</p>
 
   <!-- add score -->
  
   <p class="hidden">Your BMI suggests you're <!-- add classification -->. 
   <br>Your ideal weight is between <!-- add range -->.</p>
-</div>
+
 </div>
 </section>
-<img src="/assets/images/pattern-curved-line-left.svg" alt="curved-line" class="right-line">
-
+<div class="right-line"><img src="/assets/images/pattern-curved-line-left.svg" alt="curved-line" ></div>
 <section class="main">
-<img src="/assets/images/image-man-eating.webp" alt="image-man-eating" style="width: 468px; height: 533px;">
-  <h2>What your BMI result<br>means</h2>
-<p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'<br> Maintaining a 
+<div><img id="man-img" src="/assets/images/image-man-eating.webp" alt="image-man-eating" style="width: 564px; height: 533px;"></div>
+  <div class="main-detail"><h2>What your BMI result means</h2>
+<p id="par">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'<br> Maintaining a 
   healthy weight may lower your chances of <br>experiencing health issues later on, 
   such as obesity and type<br> 2 diabetes. Aim for a nutritious diet with reduced 
   fat and <br>sugar content, incorporating ample fruits and vegetables. <br>Additionally, 
   strive for regular physical activity, ideally about<br>30 minutes daily for 
   five days a week.</p>
-
-  Healthy eating
-  Healthy eating promotes weight control, disease prevention, better digestion, 
-  immunity, mental clarity, and mood.
-
-  Regular exercise
-  Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
-  risk, fostering wellness and longevity.
-
-  Adequate sleep
-  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
-  overall restoration and rejuvenation.
+</div>
 </section>
-  Limitations of BMI
+<section class="benefit">
+<div>
+  <img src="/assets/images/icon-eating.svg" alt="eating">
+ <h3> Healthy eating</h3>
+  <p>Healthy eating promotes weight control<br>disease prevention, better digestion, 
+  immunity,<br>mental clarity, and mood.</p>
+</div>
+<div>
+  <img src="/assets/images/icon-exercise.svg" alt="Exercises">
+ <h3>Regular Exercises</h3>
+  <p>Exercise improves fitness, aids weight control,<br> elevates mood, and reduces disease 
+  risk, <br>fostering wellness and longevity.</p>
+</div>
+  <div>
+    <img src="/assets/images/icon-sleep.svg" alt="Sleep">
+<h3>Adequate</h3>
+  <p>Sleep enhances mental clarity, emotional<br> stability, and physical wellness, promoting<br> 
+  overall restoration and rejuvenation.</p>
+</div>
 
-  Although BMI is often a practical indicator of healthy weight, it is not suited for 
-  every person. Specific groups should carefully consider their BMI outcomes, and in 
-  certain cases, the measurement may not be beneficial to use.
-
-  Gender
-  The development and body fat composition of girls and boys vary with age. Consequently, 
-  a child's age and gender are considered when evaluating their BMI.
-
-  Age
-  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
-  body fat content.
-
-  Muscle
-  BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
-  differentiate muscle from fat.
-
-  Pregnancy
-  Expectant mothers experience weight gain due to their growing baby. Maintaining a 
-  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
-  and child.
-
-  Race
-  Certain health concerns may affect individuals of some Black and Asian origins at 
-  lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse.
-
+</section>
+<section class="limit">
+  <div id="post">
+  <h3>Limitations of BMI</h3>
+<p>Although BMI is often a practical indicator of healthy weight, it is not<br>suited for 
+  every person. Specific groups should carefully consider their <br>BMI outcomes, and in 
+  certain cases, the measurement may not be <br>beneficial to use.</p>
+</div>
+<div><img class="left-line" src="/assets/images/pattern-curved-line-right.svg" alt="pattern-curved-line-right"></div>
+<div id="card">
+  <div id="icon"><img src="/assets/images/icon-gender.svg" alt="gender">
+ <h4> Gender</h4></div>
+  <p >The development and body fat<br> composition of girls and boys vary with <br>age. Consequently, 
+  a child's age and<br> gender are considered when evaluating <br>their BMI.</p>
+</div>
+<div id="card-1">
+ <div id="icon"><img src="/assets/images/icon-age.svg" alt="age">
+ <h4>Age</h4> </div>
+ <p> In aging individuals, increased body fat<br> and muscle loss may cause BMI to<br> underestimate 
+  body fat content.</p>
+</div>
+<div id="card-1">
+  <div id="icon"><img src="/assets/images/icon-muscle.svg" alt="muscle">
+  <h4>Muscle</h4></div>
+ <p>BMI may misclassify muscular<br> individuals as overweight or obese, as<br> it doesn't 
+  differentiate muscle from fat.</p> 
+</div>
+  <div id="card">
+  <div id="icon"><img src="/assets/images/icon-pregnancy.svg" alt="Pregnancy">
+  <h4>Pregnancy</h4></div>
+ <p> Expectant mothers experience weight<br> gain due to their growing baby. <br> Maintaining a 
+  healthy pre-pregnancy<br> BMI is advisable to minimise health<br> risks for both mother 
+  and child.</p>
+</div>
+<div id="card">
+ <div id="icon"> <img src="/assets/images/icon-race.svg" alt="Race">
+  <h4>Race</h4></div>
+ <p> Certain health concerns may affect<br> individuals of some Black and Asian <br> origins at 
+  lower BMIs than others. To <br> learn more, it is advised to discuss this<br> with your 
+  GP or practice nurse.</p>
+</div>
+</section>
 </body>
 </html>
