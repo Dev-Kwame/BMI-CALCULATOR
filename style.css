@@ -48,15 +48,93 @@ body p{
 .detail{
     position: absolute;
     width: 564px;
-    height: 464px;
+    height: auto;
     background: white;
     border-radius: 16px;
-    box-shadow: 10px 10px 25px rgba(143, 174, 207, 0.25) ;
+    box-shadow: 10px 10px 25px hsla(211, 40%, 69%, 0.25) ;
     margin-top: 140px; 
     z-index: 1;
-    left: 700px;
+    left: 700px;  
+}
+.detail h2{
+    font-size: 24px;
+    font-family: 'Inter-Semibold';
+    color: #253347;
+}
+.detail span{
+    font-family: 'Inter-Regular';
+    color: #5E6E85;
+    font-size: 14px;
+}
+input[type=radio]{
+    all: unset;
+    appearance: none;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+input[type=radio]{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Inter-Regular';
+    color: currentColor;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #d8e2e7;
+    display: grid;
+    place-content: center;
     
-  
+   
+}
+
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    all: unset;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    all:unset;
+    appearance: textfield;
+    
+}
+.input-wrapper{
+    border: 1px solid #d8e2e7;
+    border-radius: 12px;
+    width: 238px;
+    height: 69px;
+    display: flex;
+    justify-content: space-around;
+}
+.input-wrapper:hover{
+    cursor: pointer;
+    border: 1px solid #345FF6;
+}
+.input-wrapper label{
+    margin: 20px 0;
+    color: #345FF6;
+    font-family: 'Inter-Semibold';
+    font-size: 24px;
+    line-height: 110%;
+    width: fit-content;
+}
+.result-box p{
+    margin: 0;
+    color: #ffffff;
+}
+.result-box{
+    width: 500px;
+    height: 130px;
+    background-color: #345FF6;
+    border-radius: 16px 99px 99px 16px;
+}
+
+.measurement-box{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap
 }
 .box{
     display: flex;
@@ -64,15 +142,10 @@ body p{
     
 }
 
-#metric{
-   display: flex;
-   
+.flex-wrapper{
+    display: flex;
 }
 
-#metric label{
-   padding-top: 10px;
-   padding-left: 10px;
-}
 
 .met-detail{
    display: flex;
@@ -210,6 +283,7 @@ body p{
     gap: 30px;
     margin-right: 100px;
     margin-top: -380px;
+    margin-bottom: 70px;
     
 }
 #card{
@@ -251,6 +325,9 @@ body p{
 .race{
     grid-column: 7 / 10;
     grid-row: 3 / 4;
+}
+.hidden{
+    display: none;
 }
 
 
