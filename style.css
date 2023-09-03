@@ -58,6 +58,7 @@ body p{
     z-index: 1;
     left: 700px; 
     padding: 30px;
+   
     
    
 }
@@ -72,10 +73,15 @@ body p{
     font-size: 14px;
 }
 .flex-metric{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+    
+.metrics{
     display: flex;
     align-items: center;
-    gap: 210px
-    
+    gap: 1.12rem;
 }
 
 
@@ -88,6 +94,7 @@ body p{
      line-height: 150%;
      margin-top: 1.5em;
      color: #253347;
+     padding-bottom: 20px;
 
   }
   input[type=radio] {
@@ -128,20 +135,40 @@ body p{
     transform: scale(1);
 
   }
+  
+  
+  .number-wrapper {
+    display: grid;
+    width: auto;
+    height: 69px;
+    align-items: end;
+    gap: 1rem;
+    grid-column: span 2;
+    border: 1px solid hsl(215, 17%, 45%);
+   
+  }
 
   
-
   
 
 .result-box p{
     margin: 0;
     color: #ffffff;
+    font-size: 14px;
+    font-family: 'Inter-Regular';
 }
 .result-box{
     width: 500px;
     height: 130px;
     background-color: #345FF6;
     border-radius: 16px 99px 99px 16px;
+}
+.result-box h2{
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 110%;
+    font-family: 'Inter-Semibold';
+
 }
 
 
@@ -333,6 +360,50 @@ body p{
     grid-row: 3 / 4;
 }
 
+.number-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 1rem;
+    grid-column: span 2;
+  }
+  
+  .number-wrapper--metric > * {
+    grid-column: span 2;
+  }
+  
+  .number-label {
+    display: inline-block;
+    font-size: var(--fs-300);
+    margin-bottom: 0.5rem;
+  }
+  
+  .number-input {
+    width: 50%;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--clr-neutral-300);
+    border-radius: var(--br-small);
+  }
+  
+  .number-input:focus {
+    border: 1px solid var(--clr-accent-400);
+    outline: none;
+  }
+  
+  .unit-wrapper {
+    position: relative;
+  }
+  
+  .unit-wrapper::after {
+    content: attr(data-unit);
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: var(--fs-600);
+    font-weight: 600;
+    color: var(--clr-accent-400);
+    background-color: var(--clr-neutral-100);
+  }
 
 
 
