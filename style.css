@@ -17,20 +17,19 @@
 
 .logo{
     margin-top: 50px;
+    margin-left: 70px;
 }
 h1{
   font-family: 'Inter-SemiBold';
   font-size: 4em;
-  line-height: 110%;
   color: hsl(215, 31%, 21%);
-  margin-top: 70px;
+  
  
 }
 body p{
     font-family: 'Inter-Regular';
     font-size: 1em;
     line-height: 150%;
-    text-align: left;
     color: hsl(215, 17%, 45%);
     margin-top: 40px;
 }
@@ -40,11 +39,18 @@ body p{
     background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe); 
     margin-left: 10px;
     border-radius: 0 0 35px 35px;
-   
+
 
 }
 .summary{
+   margin-top: 120px;
    margin-left: 70px;
+}
+.summary p{
+    width: 465px;
+    word-wrap: break-word;
+    margin-top: 20px;
+   
 }
 
 .detail{
@@ -78,6 +84,7 @@ body p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -178,16 +185,7 @@ body p{
   }
   
   
-  .number-wrapper {
-    display: grid;
-    width: auto;
-    height: 69px;
-    align-items: end;
-    gap: 1rem;
-    grid-column: span 2;
-    border: 1px solid hsl(215, 17%, 45%);
-   
-  }
+
 
 
 
@@ -278,8 +276,14 @@ body p{
    margin-top: 90px;
    margin-left: 80px;
 }
+#man-img{
+    width: 564px;
+    height: 533px;
+}
 #par{
     margin-top: 25px;
+    width: 465px;
+    word-wrap: break-word;
 }
 .main-detail{
     margin-top: 170px;
@@ -404,4 +408,85 @@ body p{
 
 .hidden{
     display: none;
+}
+
+/*Media query for tablet*/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  
+    .logo{
+        margin-top: 50px;
+        margin-left: 0px;
+       
+    }
+    .logo-position{
+        display: flex;
+        justify-content: center;
+    }
+
+    .detail{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+    }
+    .summary{
+        margin-top: 20px;
+        margin-left: unset;
+    }
+    .summary p{
+        width: 686px;
+        word-wrap: break-word;
+      
+    }
+    
+    h1{
+        text-align: center;
+    }
+    .bmi-container{
+        width: 768px;
+        height: 640px;
+        margin-left: unset;
+    }
+    .detail{
+        width: 686px;
+    }
+    .input-container{
+        width: 299px;
+    }
+    .result-box{
+        width: 622px;
+        height: 149px;
+    }
+
+    #man-img{
+        position: relative;
+        left:-50px;
+        width: 360px;
+        height: 411px;
+
+
+    }
+    .right-line{
+        display: none;
+    }
+    #par{
+        width: 331px;
+        
+    }
+    .main-detail{
+        margin-top: 30px;
+    }
+    .main{
+        margin-top: 350px;
+        margin-left: 0;
+        gap: 20px;
+    }
+    .main h2{
+        font-size: 32px;
+        width: 331px;
+        word-wrap: break-word;
+    }
+    
 }
