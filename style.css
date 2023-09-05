@@ -59,7 +59,6 @@ body p{
     left: 700px; 
     padding: 30px;
    
-    
    
 }
 .detail h2{
@@ -71,14 +70,22 @@ body p{
     font-family: 'Inter-Regular';
     color: #5E6E85;
     font-size: 14px;
+    line-height: 150%;
+   
 }
 
 .flex-metric{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1em;
+    margin-bottom: 15px;
 }
-    
+
+.flex-wrapper{
+  display: flex;
+  gap: 24px;
+}  
+
 .metrics{
     display: flex;
     align-items: center;
@@ -98,6 +105,39 @@ body p{
      padding-bottom: 20px;
 
   }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 238px; 
+    border: 1px solid hsl(200, 24%, 88%);
+    padding-left: 20px;
+    padding-right: 20px;
+    height:69px;
+    border-radius: 12px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    
+}
+.input-container:hover{
+    cursor: pointer;
+    border: 1px solid #345FF6;
+}
+.input-box {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Inter-Semibold';
+}
+.unit{
+    font-size: 24px;
+    color: #345FF6;
+    font-family: 'Inter-Semibold';
+
+}
+
+ 
   input[type=radio] {
     -webkit-appearance: none;
     appearance: none;
@@ -149,8 +189,7 @@ body p{
    
   }
 
-  
-  
+
 
 .result-box p{
     margin: 0;
@@ -163,6 +202,7 @@ body p{
     height: 130px;
     background-color: #345FF6;
     border-radius: 16px 99px 99px 16px;
+    margin-top: 10px;
 }
 .result-box h2{
     font-size: 24px;
@@ -362,29 +402,6 @@ body p{
 }
 
 
-.input-container {
-    display: flex;
-    align-items: center;
-    width: 50%; 
-    border: 1px solid #d8e2e7;
-    padding-left: 20px;
-    padding-right: 20px;
-    height:69px;
-    border-radius: 12px;
-    
+.hidden{
+    display: none;
 }
-.input-box {
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 24px;
-    font-family: 'Inter-Semibold';
-}
-.unit{
-    font-size: 24px;
-    color: #345FF6;
-    font-family: 'Inter-Semibold';
-
-}
-
- 
