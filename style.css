@@ -67,11 +67,12 @@ body p{
     font-family: 'Inter-Semibold';
     color: #253347;
 }
-.detail span{
+.metric-unit{
     font-family: 'Inter-Regular';
     color: #5E6E85;
     font-size: 14px;
 }
+
 .flex-metric{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,50 +361,30 @@ body p{
     grid-row: 3 / 4;
 }
 
-.number-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
-    gap: 1rem;
-    grid-column: span 2;
-  }
-  
-  .number-wrapper--metric > * {
-    grid-column: span 2;
-  }
-  
-  .number-label {
-    display: inline-block;
-    font-size: var(--fs-300);
-    margin-bottom: 0.5rem;
-  }
-  
-  .number-input {
-    width: 50%;
-    padding: 1.25rem 1.5rem;
-    border: 1px solid var(--clr-neutral-300);
-    border-radius: var(--br-small);
-  }
-  
-  .number-input:focus {
-    border: 1px solid var(--clr-accent-400);
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 50%; 
+    border: 1px solid #d8e2e7;
+    padding-left: 20px;
+    padding-right: 20px;
+    height:69px;
+    border-radius: 12px;
+    
+}
+.input-box {
+    border: none;
     outline: none;
-  }
-  
-  .unit-wrapper {
-    position: relative;
-  }
-  
-  .unit-wrapper::after {
-    content: attr(data-unit);
-    position: absolute;
-    top: 1.25rem;
-    right: 1.5rem;
-    font-size: var(--fs-600);
-    font-weight: 600;
-    color: var(--clr-accent-400);
-    background-color: var(--clr-neutral-100);
-  }
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Inter-Semibold';
+}
+.unit{
+    font-size: 24px;
+    color: #345FF6;
+    font-family: 'Inter-Semibold';
 
+}
 
-
+ 
