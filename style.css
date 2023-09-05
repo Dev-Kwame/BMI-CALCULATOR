@@ -50,6 +50,7 @@ body p{
     width: 465px;
     word-wrap: break-word;
     margin-top: 20px;
+    text-align: left;
    
 }
 
@@ -213,8 +214,7 @@ body p{
 
 .box{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 
 
@@ -321,7 +321,9 @@ body p{
     line-height: 150%;
     text-align: left;
     margin-top: 20px;
-    
+    width: 365px;
+    word-wrap: break-word;
+     
 }
 
 #limit-text h3{  
@@ -437,7 +439,10 @@ body p{
     }
     .summary p{
         width: 686px;
+        text-align: center;
         word-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
       
     }
     
@@ -488,5 +493,22 @@ body p{
         width: 331px;
         word-wrap: break-word;
     }
-    
+    .benefit{
+        all: unset;
+        width: 768px;
+        height: 503px;
+        background: linear-gradient(290.1deg,rgba(214,230,254,.25) 0%,rgba(214,252,254,0) 100%);
+        
+    }
+    .benefit p{
+        word-wrap: break-word;
+        width: 582px;
+       
+    }
+    .flex-benefit{
+       display: flex;
+       margin-top: 50px;
+       margin-left: 50px;
+       
+    }
 }
