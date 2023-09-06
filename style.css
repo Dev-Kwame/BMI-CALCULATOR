@@ -32,6 +32,8 @@ body p{
     line-height: 150%;
     color: hsl(215, 17%, 45%);
     margin-top: 40px;
+    
+  
 }
 .bmi-container{
     width: 978px;
@@ -334,6 +336,10 @@ body p{
     margin-top: 100px;
     
 }
+#limit-text p{
+    width: 564px;
+    word-wrap: break-word;
+}
    
 
  
@@ -494,21 +500,56 @@ body p{
         word-wrap: break-word;
     }
     .benefit{
-        all: unset;
-        width: 768px;
+        display: flex;
+        flex-direction: column;
+        place-items: unset;
+        place-content: unset;
         height: 503px;
-        background: linear-gradient(290.1deg,rgba(214,230,254,.25) 0%,rgba(214,252,254,0) 100%);
-        
+        gap:30px;
+        padding-top: 40px;
+         
+    }
+    .benefit-container{
+        padding-left: 40px;
+        margin-top: -30px;
+       
     }
     .benefit p{
         word-wrap: break-word;
         width: 582px;
+      
        
+    }
+    .benefit h3{
+        margin-top: 0;
     }
     .flex-benefit{
        display: flex;
        margin-top: 50px;
        margin-left: 50px;
        
+    }
+    .limit{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .left-line{
+        display: none;
+    }
+    #limit-text h3{
+        text-align: center;
+       
+    }
+    #limit-text p{
+        word-wrap:break-word;
+        width: 686px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+    #limit-text{
+        margin-left: 0px;
     }
 }
