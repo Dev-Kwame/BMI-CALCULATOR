@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 <body>
 <section class="box">
-<div class="bmi-container">
-  <div class="logo-position"><img src="/assets/images/logo.svg" alt="logo" sizes="64x64" class="logo"></div>
-  <div class="summary">
-<h1>Body Mass</h1>
-<h1>Index Calculator</h1>
-<p>Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
+  <div class="logo"><img src="/assets/images/logo.svg" alt="logo"></div>
+  <div class="flex-box">
+<h1>Body Mass<br>Index Calculator</h1>
+<p>Better understand your weight in relation to your height using our body mass index (BM) calculator. 
+  While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate 
   your overall health and well-being.</p>
 </div>
-</div>
-
+<div class="flex-detail">
 <div class="detail">
   <h2>Enter your details below</h2>
   <div class="flex-metric">
@@ -34,11 +29,11 @@
     Imperial
   </label>
 </div>
-<div class="measurement-metric">
-<div class="flex-wrapper">
+<div class="measurement-metric ">
+<div class="flex-wrapper-metric">
   <div>
 <span class="metric-unit">Height</span>
-<div class="input-container metic">
+<div class="input-container metric">
   <input type="text" class="input-box" id="heightCM" placeholder="0">
   <span class="unit">cm</span>
 </div>
@@ -81,13 +76,18 @@
 </div>
 </div>
 <div class="result-box">
-  <h2>Welcome!</h2>
-  <p>Enter your height and weight and you’ll see your BMI result here</p>
+  <div class="welcome"><h2>Welcome!</h2>
+ <p id="open">Enter your height and weight and you’ll see your BMI result here</p>
+</div>
+<div class="result hidden">
+  <div><p>Your BMI is...</p></div>
+  <div><p class="bmi-result">Your BMI suggests you’re a healthy weight. Your ideal weight is between</p></div>
+</div>
   </div>
 
 </div>
-
 </div>
+
 </section>
 <div class="right-line"><img src="/assets/images/pattern-curved-line-left.svg" alt="curved-line" ></div>
 <section class="main">
@@ -129,7 +129,7 @@
 </section>
 
   <div id="limit-text">
-  <h3>Limitations of BMI</h3>
+  <h3 id="hoo">Limitations of BMI</h3>
 <p>Although BMI is often a practical indicator of healthy weight, it is not suited for 
   every person. Specific groups should carefully consider their BMI outcomes, and in 
   certain cases, the measurement may not be beneficial to use.</p>
@@ -145,7 +145,7 @@
 <div id="card-1" class="age">
  <div id="icon"><img src="/assets/images/icon-age.svg" alt="age">
  <h4>Age</h4> </div>
- <p> In aging individuals, increased body fat<br> and muscle loss may cause BMI to<br> underestimate 
+ <p> In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
   body fat content.</p>
 </div>
 <div id="card-1" class="muscle">
