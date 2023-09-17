@@ -388,7 +388,7 @@ body p{
 
 
  /*media uery for tablets*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .flex-box,.box img{
         padding-left: unset;
         padding-bottom: unset;
@@ -503,16 +503,18 @@ body p{
     }
     .flex-benefit{
         display: flex;
-    }
-      
-        
+    }  
      
      .left-line{
         display: none;
      }
      .limit{
-        all: unset;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: unset;
      }
+ 
+     
      #limit-text h3{
         text-align: center;
         margin-right: unset;
@@ -524,7 +526,8 @@ body p{
         text-align: center;
     }
 }
-   
+
+/*Media query for mobile devices*/
 @media only screen and (max-device-width: 480px) {
     .box{
         width: 100%;
@@ -546,6 +549,7 @@ body p{
     .input-container{
         width: 280px;
     }
+   
     .flex-metric{
         margin-bottom: 5px;
     }
@@ -554,6 +558,7 @@ body p{
         flex-direction: column;
         gap: 5px;
    }
+   
    .result-box{
         width: 280px;
         height: 257px;
@@ -629,6 +634,8 @@ body p{
         justify-content: center;
         place-items: center;
         gap: 16px;
+        margin-top: 70px;
+        margin-right: unset;
     }
     .gender{
         width: 327px;
