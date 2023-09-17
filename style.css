@@ -387,8 +387,9 @@ body p{
 }
 
 
- /*media uery for tablets*/
-@media screen and (max-width: 768px) {
+
+ /*media query for tablets*/ 
+ @media screen and (max-width: 768px){
     .flex-box,.box img{
         padding-left: unset;
         padding-bottom: unset;
@@ -403,7 +404,7 @@ body p{
         justify-content: center;
     }
     .box{
-        width: 100%;
+        max-width: 100%;
         height: 640px;
         margin-left: unset;
         margin-bottom: 250px;
@@ -511,7 +512,12 @@ body p{
      .limit{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        place-content: center;
+        place-items: center;
         margin-right: unset;
+        margin-top: unset;
+        gap: 16px;
      }
  
      
@@ -525,12 +531,37 @@ body p{
         width: 686px;
         text-align: center;
     }
+    .gender{
+        width: 335px;
+        height: 232px;
+    }
+    .age{
+        width: 335px;
+        height: 232px;
+    }
+    .muscle{
+        width: 335px;
+        height: 256px;
+    }
+    .pregnancy{
+        width: 335px;
+        height: 256px;
+    }
+    .race{
+        width: 365px;
+        height: 232px;
+    }
 }
 
+
+
+
+
 /*Media query for mobile devices*/
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px){
     .box{
         width: 100%;
+        margin-left: unset;
 
   }
     .box h1{
@@ -581,7 +612,7 @@ body p{
      margin-top: unset;
    }
    #man-img{
-      width: 100%;
+      max-width: 100%;   
       height: 354px;
       left: unset;
       margin-bottom: 50px;
