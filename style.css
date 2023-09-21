@@ -406,6 +406,7 @@ body p{
     display: none;
 }
 
+/*Media query for tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .flex-box,.box img{
         padding-top: 30px;
@@ -421,9 +422,13 @@ body p{
         display: none;
     }
     .box{
-        width: 100vw;
+        all: unset;
+    }
+    .tablet-box{
+        width: 100%;
+        background-image: linear-gradient(290.1deg,#D6E6FE 0%,rgba(214,252,254,0) 100%);
         height: 640px;
-        margin-left: unset;
+        border-radius: 0px 0px 35px 35px;
     }
     .flex-box h1{
         word-wrap: normal;
@@ -432,10 +437,12 @@ body p{
         margin-bottom: 20px;
     }
     .flex-box p{
-        word-wrap: normal;
+        word-wrap: break-word;
         text-align: center;
         width: 686px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+       
     }
     .detail{
         width: 686px;
@@ -447,6 +454,7 @@ body p{
         display: flex;
         justify-content: center;
     }
+   
     .input-container{
         width: 299px;
     }
@@ -752,6 +760,177 @@ body p{
         height: 216px;
     }
    
+}
+
+/*media query for other tablets and ipads*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   .logo{
+       display: flex;
+       justify-content: center;
+   }
+   
+    .flex-box,.box img{
+        padding-top: 30px;
+        padding-left: unset;
+        padding-bottom: unset;
+    }
+
+   .right-line{
+        display: none;
+   }
+   .box{
+        all: unset;
+   }
+   .tablet-box{
+        width: 100%;
+        background-image: linear-gradient(290.1deg,#D6E6FE 0%,rgba(214,252,254,0) 100%);
+        height: 640px;
+        border-radius: 0px 0px 35px 35px;     
+   }
+   .flex-box h1{
+    word-wrap: normal;
+    width: unset;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.flex-box p{
+    word-wrap: break-word;
+    text-align: center;
+    width: 686px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   }
+   .detail{
+        width: 686px;
+        position: relative;
+        left: 0;
+        top: 40px;
+    }
+    .flex-detail{
+        display: flex;
+        justify-content: center;
+    }
+   
+   
+    .input-container{
+        width: 299px;
+    }
+    .result-box{
+        width: 622px;
+        height: 149px;
+    }
+
+    .main img{
+        width: 375px;
+        height: 411px;
+        position: relative;
+        left: -55px;
+    }
+    .main{
+        margin-top: 350px;
+        margin-left: unset;
+        place-items: unset;
+        gap: 20px;
+        
+    }
+    .main-detail h2{
+        font-size: 32px;
+        word-wrap: break-word;
+        width: 331px;
+    }
+    .main-detail p{
+        word-wrap: break-word;
+        width: 331px;
+    }
+    .main-detail{
+        position: relative;
+        top: -90px;
+
+    }
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: unset;
+        place-items: unset;
+        border-radius: unset;
+        height: 503px;        
+        gap: 60px;
+        margin-top: 30px;
+        padding: 50px;
+      
+    }
+    .flex-benefit{
+        display: flex;
+        flex-direction: row;
+     
+    }
+    
+    .benefit-container{
+        padding-left: 50px;
+        margin-top: -40px;
+    }
+    .benefit p{
+        word-wrap: break-word;
+        width: 582px; 
+    }
+    .limit{
+        display: flex;
+        flex-wrap: wrap;
+        place-content: center;
+        margin-right: unset;
+        margin-top: unset;
+        gap: 16px;
+    }
+    #limit-text{
+        margin-left: unset;
+       
+    }
+   #limit-text h3{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 32px;
+   }
+   #limit-text p{
+        width: 686px;
+        word-wrap: break-word;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+   }
+   .gender{
+        width: 335px;
+   }
+   
+    .age{
+        width: 335px;
+        height: 232px;
+
+    }
+    .muscle{
+        width: 335px;
+        height: 256px;
+        
+    }
+    .pregnancy{
+        width: 335px;
+        height: 256px;
+
+    }
+    .race{
+        width: 365px;
+        height: 232px;
+    }
+
+    .left-line{
+        display: none;
+    }
+
 }
 
 
