@@ -186,10 +186,15 @@ body p{
   }
 .result{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: -20px;
+    padding: 5px 10px ;
+   
+}
+.result p{
+    word-wrap: break-word;
+    width: 206px;
+
 }
 .welcome{
     padding: 20px;
@@ -198,8 +203,9 @@ body p{
  .bmi-result{
     word-wrap: break-word;
     width: 206px;
-    font-size: 14px;
+    font-size: 0.875em;
     font-family: 'Inter-Regular';
+    color: #FFFFFF;
  } 
 
 .result-box p{
@@ -228,7 +234,11 @@ body p{
     font-family: 'Inter-Semibold';
 
 }
-
+.final_results{
+    font-size: 4em;
+    color: #ffffff;
+    font-family: 'Inter-Semibold';
+}
 
 .right-line{
     position: absolute;
@@ -406,6 +416,7 @@ body p{
     display: none;
 }
 
+/*iphone SE media query*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width:  667px) 
@@ -512,6 +523,16 @@ body p{
         word-wrap: break-word;
         width: 546px; 
     }
+    .result{
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+    }
+    
+    .result p{
+        word-wrap: break-word;
+        width: 216px;
+    }
     
     .right-line{
         display: none;
@@ -566,6 +587,7 @@ body p{
    .left-line{
        display: none;
    }
+
     
 
 
@@ -650,6 +672,16 @@ body p{
     .right-line{
         display: none;
     }
+    .result{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .final_results{
+        font-size: 3em;
+    }
+    
+
     .main{
         display: flex;
         flex-direction: column;
@@ -759,6 +791,9 @@ body p{
         width: 327px;
         height: 216px;
     }
+    .hidden{
+        display: none;
+    }
    
 }
 
@@ -823,6 +858,10 @@ body p{
     .result-box{
         width: 622px;
         height: 149px;
+    }
+    .final_results{
+        font-size: 3em;
+
     }
 
     .main img{
