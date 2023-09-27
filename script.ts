@@ -12,8 +12,9 @@ const weightLBSInput: HTMLInputElement = document.getElementById('weightLBS') as
 const welcomeMessage: HTMLElement = document.querySelector('.welcome');
 const welcomeInput: HTMLElement = document.getElementById('open')
 const result: HTMLElement = document.querySelector('.result')
-const resultValue: HTMLElement | null = document.querySelector('.result-value');
+const resultValue: HTMLElement | null = document.querySelector('.result-value')
 const finalResult: HTMLElement | null = document.querySelector('.final_results')
+
 
 
 
@@ -52,9 +53,10 @@ function showMetricContent(): void {
    // Get the height in centimeters and weight in kilograms from input fields
    const heightInCM: number = parseFloat(heightCMInput.value);
    const weightInKG: number = parseFloat(weightKGInput.value);
+   
 
     // Check if height and weight are valid numbers
-    if (isNaN(heightInCM) || isNaN(weightInKG)) {
+    if (isNaN(heightInCM) || isNaN(weightInKG)){
 
       // Display the "welcome" message if either value is empty
       if (welcomeMessage) {
@@ -68,7 +70,7 @@ function showMetricContent(): void {
  //Calculate BMI using the metric units
  const metricBMI: number =  weightInKG / ((heightInCM / 100) ** 2);
 
- 
+
 
  //hide welcome message and display results
  if(welcomeMessage)welcomeMessage.style.display = 'none';
@@ -77,15 +79,56 @@ function showMetricContent(): void {
 
  // Display the BMI result in the "result" div
   if(finalResult)finalResult.innerText = metricBMI.toFixed(1);
+ 
   
 
  
  }
 
+ function calculateBMIImperial(){
+
+   const heighInFT: number = parseFloat(heightFTInput.value);
+   const heightInIN: number = parseFloat(heightINInput.value);
+   const weightInST: number = parseFloat(weightSTInput.value);
+   const weightInLBS: number = parseFloat(weightLBSInput.value);
+
+   if(isNaN(heighInFT) || isNaN(heightInIN) || isNaN(weightInST) || isNaN(weightInLBS)){
+
+    // Display the "welcome" message if either value is empty
+    if (welcomeMessage) {
+      welcomeMessage.style.display = 'block';
+      welcomeInput.style.display = 'block';
+      result.style.display = 'none';
+  }
+    return;
+
+   }
+
+  //Calculate BMI using the imperial units
+ const heightInInches = (heighInFT) * 12 + heightInIN;
+ const weightInPounds = (weightInST) * 14 + weightInLBS
+ const imperialBMI: number = weightInPounds /(heightInInches **2) *703; 
+
+ //hide welcome message and display results
+ if(welcomeMessage)welcomeMessage.style.display = 'none';
+ if(welcomeInput)welcomeInput.style.display = 'none';
+ if(result)result.style.display = 'flex';
+
+
+
+ if(finalResult)finalResult.innerText = imperialBMI.toFixed(1);
+
+
+
+ }
 
  // Add input event listeners to trigger BMI calculation
 if (heightCMInput) heightCMInput.addEventListener("input", calculateBMI);
 if (weightKGInput) weightKGInput.addEventListener("input", calculateBMI);
+if (heightFTInput) heightFTInput.addEventListener("input", calculateBMIImperial);
+if (heightINInput) heightINInput.addEventListener("input", calculateBMIImperial);
+if (weightSTInput)  weightSTInput.addEventListener("input", calculateBMIImperial);
+if (weightLBSInput) weightLBSInput.addEventListener("input",calculateBMIImperial);
 
 
  

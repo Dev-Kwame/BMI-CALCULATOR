@@ -72,8 +72,44 @@ function calculateBMI() {
     if (finalResult)
         finalResult.innerText = metricBMI.toFixed(1);
 }
+function calculateBMIImperial() {
+    var heighInFT = parseFloat(heightFTInput.value);
+    var heightInIN = parseFloat(heightINInput.value);
+    var weightInST = parseFloat(weightSTInput.value);
+    var weightInLBS = parseFloat(weightLBSInput.value);
+    if (isNaN(heighInFT) || isNaN(heightInIN) || isNaN(weightInST) || isNaN(weightInLBS)) {
+        // Display the "welcome" message if either value is empty
+        if (welcomeMessage) {
+            welcomeMessage.style.display = 'block';
+            welcomeInput.style.display = 'block';
+            result.style.display = 'none';
+        }
+        return;
+    }
+    //Calculate BMI using the imperial units
+    var heightInInches = (heighInFT) * 12 + heightInIN;
+    var weightInPounds = (weightInST) * 14 + weightInLBS;
+    var imperialBMI = weightInPounds / (Math.pow(heightInInches, 2)) * 703;
+    //hide welcome message and display results
+    if (welcomeMessage)
+        welcomeMessage.style.display = 'none';
+    if (welcomeInput)
+        welcomeInput.style.display = 'none';
+    if (result)
+        result.style.display = 'flex';
+    if (finalResult)
+        finalResult.innerText = imperialBMI.toFixed(1);
+}
 // Add input event listeners to trigger BMI calculation
 if (heightCMInput)
     heightCMInput.addEventListener("input", calculateBMI);
 if (weightKGInput)
     weightKGInput.addEventListener("input", calculateBMI);
+if (heightFTInput)
+    heightFTInput.addEventListener("input", calculateBMIImperial);
+if (heightINInput)
+    heightINInput.addEventListener("input", calculateBMIImperial);
+if (weightSTInput)
+    weightSTInput.addEventListener("input", calculateBMIImperial);
+if (weightLBSInput)
+    weightLBSInput.addEventListener("input", calculateBMIImperial);
