@@ -15,6 +15,7 @@ var result = document.querySelector('.result');
 var resultValue = document.querySelector('.result-value');
 var finalResult = document.querySelector('.final_results');
 var imperialBMIResult = document.querySelector('.bmi-result');
+
 // Function to show the metric content and hide the imperial content
 function showMetricContent() {
     if (metricButton)
@@ -41,6 +42,7 @@ function showMetricContent() {
     if (result)
         result.style.display = 'none';
 }
+
 // Function to show the imperial content and hide the metric content
 function showImperialContent() {
     if (imperialButton)
@@ -65,6 +67,7 @@ function showImperialContent() {
     if (result)
         result.style.display = 'none';
 }
+
 // Add event listeners to the radio buttons
 if (metricButton)
     metricButton.addEventListener("click", showMetricContent);
