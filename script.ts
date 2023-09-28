@@ -14,6 +14,7 @@ const welcomeInput: HTMLElement = document.getElementById('open')
 const result: HTMLElement = document.querySelector('.result')
 const resultValue: HTMLElement | null = document.querySelector('.result-value')
 const finalResult: HTMLElement | null = document.querySelector('.final_results')
+const imperialBMIResult: Element | null = document.querySelector('.bmi-result')
 
 
 
@@ -26,7 +27,15 @@ function showMetricContent(): void {
     if(metricButton) metricButton.checked = true; // Ensure Metric is checked
     if(imperialButton) imperialButton.checked = false; // Uncheck Imperial
     if(metricContent) metricContent.classList.remove("hidden");
-    if(imperialContent) imperialContent.classList.add("hidden"); 
+    if(imperialContent) imperialContent.classList.add("hidden");
+    //Reset content in imperial div when metric ic clicked on 
+    if(heightFTInput)heightFTInput.value = "";
+    if(heightINInput)heightINInput.value = "";
+    if(weightSTInput) weightSTInput.value = "";
+    if(weightLBSInput) weightLBSInput.value = "";
+    if(welcomeMessage)welcomeMessage.style.display = 'block';
+    if(welcomeInput)welcomeInput.style.display = 'block';
+    if(result)result.style.display = 'none';
   
   }
 
@@ -37,7 +46,12 @@ function showMetricContent(): void {
     if(imperialContent)imperialContent.classList.remove("hidden");
     if(metricContent)metricContent.classList.add("hidden");
     if(rightLine)rightLine.style.display = "none";
-  
+     //Reset content in metric div when imperial is clicked on 
+    if(heightCMInput)heightCMInput.value = "";
+    if(weightKGInput)weightKGInput.value = "";
+    if(welcomeMessage)welcomeMessage.style.display = 'block';
+    if(welcomeInput)welcomeInput.style.display = 'block';
+    if(result)result.style.display = 'none';
   } 
   
    // Add event listeners to the radio buttons
@@ -113,7 +127,7 @@ function showMetricContent(): void {
  if(welcomeMessage)welcomeMessage.style.display = 'none';
  if(welcomeInput)welcomeInput.style.display = 'none';
  if(result)result.style.display = 'flex';
-
+ if(imperialBMIResult)imperialBMIResult.innerHTML = `Your BMI suggests you’re a healthy weight. Your ideal weight is between 9st 6lbs- 12st 10lbs`;
 
 
  if(finalResult)finalResult.innerText = imperialBMI.toFixed(1);

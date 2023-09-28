@@ -416,187 +416,8 @@ body p{
     display: none;
 }
 
-/*iphone SE media query*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width:  667px) 
-  and (orientation: landscape){
-   
-    .flex-box,.box img{
-        padding-top: 20px;
-        padding-left: unset;
-        padding-bottom: unset;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-     
-   }
-    .box{
-        width: 100%;
-        height: 640px;
-        margin-left: unset;
-    }
-  
-    .flex-box h1{
-        font-size: 3rem;
-        word-wrap: break-word;
-        width: 327px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    
-    }
-    .flex-box p{
-       font-size: 1em;
-       text-align: center;
-       word-wrap: break-word;
-       width: 600px;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 10px;
-    }
-    .detail{
-        position: relative;
-        left: 0;
-        top: 30px;
-        height: auto;
-        padding: 20px;
-     
-    }
-    .flex-detail{
-        display: flex;
-        justify-content: center;
-    }
-    .main img{
-        width: 300px;
-        height: 411px;
-        position: relative;
-        left: -55px;
-    }
-    .main{
-        margin-top: 350px;
-        margin-left: unset;
-        place-items: unset;
-        gap: 20px;
-        
-    }
-    .main-detail h2{
-        font-size: 32px;
-        word-wrap: break-word;
-        width: 331px;
-    }
-    .main-detail p{
-        word-wrap: break-word;
-        width: 321px;
-        gap: 10px;
-      
-    }
-    .main-detail{
-        position: relative;
-        top: -90px;
-
-    }
-    .benefit{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-right: unset;
-        place-items: unset;
-        border-radius: unset;
-        height: 503px;        
-        margin-top: 30px;
-        padding: 40px;
-      
-    }
-    .flex-benefit{
-        display: flex;
-        flex-direction: row;
-     
-    }
-    
-    .benefit-container{
-        padding-left: 40px;
-        margin-top: -40px;
-    }
-    .benefit p{
-        word-wrap: break-word;
-        width: 546px; 
-    }
-    .result{
-        display: flex;
-        flex-direction: row;
-        justify-content: unset;
-    }
-    
-    .result p{
-        word-wrap: break-word;
-        width: 216px;
-    }
-    
-    .right-line{
-        display: none;
-    }
-    .limit{
-        display: flex;
-        flex-wrap: wrap;
-        place-content: center;
-        margin-right: unset;
-        margin-top: unset;
-        gap: 16px;
-    }
-    #limit-text{
-        margin-left: unset;
-       
-    }
-   #limit-text h3{
-        margin-top: 40px;
-        text-align: center;
-        font-size: 32px;
-   }
-   #limit-text p{
-        width: 546px;
-        word-wrap: break-word;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-   }
-     .gender{
-        width: 335px;
-   }
-   
-    .age{
-        width: 335px;
-        height: 232px;
-
-    }
-    .muscle{
-        width: 335px;
-        height: 256px;
-        
-    }
-    .pregnancy{
-        width: 335px;
-        height: 256px;
-
-    }
-    .race{
-        width: 365px;
-        height: 232px;
-    }
-   .left-line{
-       display: none;
-   }
 
     
-
-
-  }
-
-    
-
-    
-
 /*media query for mobile*/
 @media only screen and (min-device-width: 321px) and (max-device-width: 480px){
 
@@ -871,7 +692,7 @@ body p{
         left: -55px;
     }
     .main{
-        margin-top: 350px;
+        margin-top: 400px;
         margin-left: unset;
         place-items: unset;
         gap: 20px;
@@ -1039,7 +860,7 @@ body p{
          left: -55px;
      }
      .main{
-         margin-top: 350px;
+         margin-top: 420px;
          margin-left: unset;
          place-items: unset;
          gap: 20px;
@@ -1141,3 +962,179 @@ body p{
   }
 
 
+/*iphone SE media query*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width:  667px) 
+  and (orientation: landscape){
+   
+    .flex-box,.box img{
+        padding-top: 20px;
+        padding-left: unset;
+        padding-bottom: unset;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+     
+   }
+    .box{
+        width: 100%;
+        height: 640px;
+        margin-left: unset;
+    }
+  
+    .flex-box h1{
+        font-size: 3rem;
+        word-wrap: break-word;
+        width: 327px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .flex-box p{
+       font-size: 1em;
+       text-align: center;
+       word-wrap: break-word;
+       width: 600px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 10px;
+    }
+    .detail{
+        position: relative;
+        left: 0;
+        top: 30px;
+        height: auto;
+        padding: 20px;
+     
+    }
+    .flex-detail{
+        display: flex;
+        justify-content: center;
+    }
+    .main img{
+        width: 300px;
+        height: 411px;
+        position: relative;
+        left: -55px;
+    }
+    .main{
+        margin-top: 350px;
+        margin-left: unset;
+        place-items: unset;
+        gap: 20px;
+        
+    }
+    .main-detail h2{
+        font-size: 32px;
+        word-wrap: break-word;
+        width: 331px;
+    }
+    .main-detail p{
+        word-wrap: break-word;
+        width: 321px;
+        gap: 10px;
+      
+    }
+    .main-detail{
+        position: relative;
+        top: -90px;
+
+    }
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: unset;
+        place-items: unset;
+        border-radius: unset;
+        height: 503px;        
+        margin-top: 30px;
+        padding: 40px;
+      
+    }
+    .flex-benefit{
+        display: flex;
+        flex-direction: row;
+     
+    }
+    
+    .benefit-container{
+        padding-left: 40px;
+        margin-top: -40px;
+    }
+    .benefit p{
+        word-wrap: break-word;
+        width: 546px; 
+    }
+    .result{
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+    }
+    
+    .result p{
+        word-wrap: break-word;
+        width: 216px;
+    }
+    
+    .right-line{
+        display: none;
+    }
+    .limit{
+        display: flex;
+        flex-wrap: wrap;
+        place-content: center;
+        margin-right: unset;
+        margin-top: unset;
+        gap: 16px;
+    }
+    #limit-text{
+        margin-left: unset;
+       
+    }
+   #limit-text h3{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 32px;
+   }
+   #limit-text p{
+        width: 546px;
+        word-wrap: break-word;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+   }
+     .gender{
+        width: 335px;
+   }
+   
+    .age{
+        width: 335px;
+        height: 232px;
+
+    }
+    .muscle{
+        width: 335px;
+        height: 256px;
+        
+    }
+    .pregnancy{
+        width: 335px;
+        height: 256px;
+
+    }
+    .race{
+        width: 365px;
+        height: 232px;
+    }
+   .left-line{
+       display: none;
+   }
+
+    
+
+
+  }
