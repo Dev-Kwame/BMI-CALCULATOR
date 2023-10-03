@@ -860,10 +860,12 @@ body p{
          left: -55px;
      }
      .main{
-         margin-top: 420px;
-         margin-left: unset;
-         place-items: unset;
-         gap: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 420px;
+        margin-left: unset;
+        place-items: unset;
+        gap: 20px;
          
      }
      .main-detail h2{
