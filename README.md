@@ -48,6 +48,7 @@ Your users should be able to:
 - CSS custom properties
 - Javascript
 - Typescript
+- CSS grid properties
 
 ### What I learned
 I learned on how and when HTMLInputElement and HTMLElement is used in Typescript. Also i got to understand further how grid-template-columns and grid-template area works
