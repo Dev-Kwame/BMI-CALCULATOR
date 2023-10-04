@@ -423,7 +423,7 @@ input[type=text]{
 
     
 /*media query for mobile*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
 
     .logo{
         display: flex;
@@ -625,7 +625,7 @@ input[type=text]{
 }
 
 /*media query for tablets and ipads*/
-@media only screen 
+@media screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -799,7 +799,7 @@ input[type=text]{
 
 }
 /*Portrait and landscape iPad Pro*/
-@media only screen 
+@media screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px) 
   and (-webkit-min-device-pixel-ratio: 2){
