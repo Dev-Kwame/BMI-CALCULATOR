@@ -127,6 +127,10 @@ body p{
     margin-bottom: 20px;
     
 }
+input[type=text]{
+    padding-right: 10px;
+
+}
 .input-container:hover{
     cursor: pointer;
     border: 1px solid #345FF6;
@@ -419,7 +423,7 @@ body p{
 
     
 /*media query for mobile*/
-@media only screen and (min-device-width: 321px) and (max-device-width: 480px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
 
     .logo{
         display: flex;
@@ -471,6 +475,8 @@ body p{
     }
     .input-container{
         width: 280px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .flex-metric{
         margin-bottom: 5px;
